@@ -5,8 +5,10 @@ This repository provides a tiny utility function `trim_bvh` for trimming out exc
 ## Usage
 
 Invoke the `trim_bvh` method as follows:
-```import trim_bvh
-trim_bvh.trim_bvh(in_file, out_file, start_time, end_time)```
+```
+import trim_bvh
+trim_bvh.trim_bvh(in_file, out_file, start_time, end_time)
+```
 
 This command reads the file `in_file` and writes an excerpt of its motion to `out_file`, keeping only the frames between `start_time` and `end_time` (which are given in seconds). More specifically, the code retains only those the frames whose midpoints fall between `start_time` and `end_time`, inclusive.
 
